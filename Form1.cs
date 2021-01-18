@@ -72,19 +72,6 @@ namespace BinaryRelations
                 return true;
             return false;
         }
-        public static bool IsTransitive(int[,] matrix, int[,] square)
-        {
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    if (square[i, j] == 1)
-                        if (matrix[i, j] != 1)
-                            return false;
-                }
-            }
-            return true;
-        }
         public static int GetZerosAndOnes(int[,] matrix)
         {
             int j = 0;
@@ -124,10 +111,6 @@ namespace BinaryRelations
                             return false;
             return true;
         }
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
         private void button2_Click_1(object sender, EventArgs e)
         {
             matrixDgv.Rows.Clear();
@@ -153,8 +136,10 @@ namespace BinaryRelations
 
         private void RefLbl_MouseHover(object sender, EventArgs e)
         {
+            if()
             if (matrixDgv.Rows.Count > 0 && matrixDgv.Columns.Count > 0)
                 matrixDgv.Rows[1].Cells[1].Style.BackColor = Color.Yellow;
+            toolTip1.Show("", this.RefLbl);
         }
 
         private void RefLbl_MouseLeave(object sender, EventArgs e)

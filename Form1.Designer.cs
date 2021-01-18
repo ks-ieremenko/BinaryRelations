@@ -29,6 +29,7 @@ namespace BinaryRelations
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -58,6 +59,7 @@ namespace BinaryRelations
             this.panelVlast = new System.Windows.Forms.Panel();
             this.vlastLbl = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelTextBoxes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.matrixDgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -461,6 +463,7 @@ namespace BinaryRelations
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.Label vlastLbl;
         public System.Windows.Forms.DataGridView squareDgv;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

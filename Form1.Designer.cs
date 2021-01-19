@@ -200,6 +200,7 @@ namespace BinaryRelations
             this.ArefLbl.Size = new System.Drawing.Size(213, 25);
             this.ArefLbl.TabIndex = 32;
             this.ArefLbl.Text = "Антирефлексивность";
+            this.ArefLbl.MouseHover += new System.EventHandler(this.ArefLbl_MouseHover);
             // 
             // SymLbl
             // 
@@ -210,6 +211,7 @@ namespace BinaryRelations
             this.SymLbl.Size = new System.Drawing.Size(175, 25);
             this.SymLbl.TabIndex = 33;
             this.SymLbl.Text = "Симметричность";
+            this.SymLbl.MouseHover += new System.EventHandler(this.SymLbl_MouseHover);
             // 
             // pictureBox2
             // 
@@ -235,9 +237,10 @@ namespace BinaryRelations
             this.AsymLbl.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AsymLbl.Location = new System.Drawing.Point(26, 250);
             this.AsymLbl.Name = "AsymLbl";
-            this.AsymLbl.Size = new System.Drawing.Size(171, 25);
+            this.AsymLbl.Size = new System.Drawing.Size(185, 25);
             this.AsymLbl.TabIndex = 35;
-            this.AsymLbl.Text = "Асиметричность";
+            this.AsymLbl.Text = "Асимметричность";
+            this.AsymLbl.MouseHover += new System.EventHandler(this.AsymLbl_MouseHover);
             // 
             // RefLbl
             // 
@@ -278,6 +281,7 @@ namespace BinaryRelations
             this.AntisLbl.Size = new System.Drawing.Size(220, 25);
             this.AntisLbl.TabIndex = 34;
             this.AntisLbl.Text = "Антисимметричность";
+            this.AntisLbl.MouseHover += new System.EventHandler(this.AntisLbl_MouseHover);
             // 
             // pictureBox5
             // 
@@ -297,6 +301,7 @@ namespace BinaryRelations
             this.TrLbl.Size = new System.Drawing.Size(165, 25);
             this.TrLbl.TabIndex = 36;
             this.TrLbl.Text = "Транзитивность";
+            this.TrLbl.MouseHover += new System.EventHandler(this.TrLbl_MouseHover);
             // 
             // panelBv
             // 
@@ -411,24 +416,26 @@ namespace BinaryRelations
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(115, 16);
+            this.label1.Location = new System.Drawing.Point(102, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 25);
             this.label1.TabIndex = 45;
-            this.label1.Text = "Матрица БО В:";
+            this.label1.Text = "Матрица БО B:";
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(429, 16);
+            this.label2.Location = new System.Drawing.Point(409, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(258, 25);
+            this.label2.Size = new System.Drawing.Size(264, 25);
             this.label2.TabIndex = 46;
-            this.label2.Text = "Матрица-квадрат К= В*В:";
+            this.label2.Text = "Матрица-квадрат K = В*В:";
             // 
             // Form1
             // 

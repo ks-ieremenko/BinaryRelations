@@ -40,7 +40,7 @@ namespace BinaryRelations
             int i = 0;
             for (int j = 0; j < matrix.GetLength(1) && i < matrix.GetLength(0); j++, i++)
                 if (matrix[i, j] != 0)
-                        return false;
+                    return false;
             isAntiref = true;
             return true;
         }
@@ -116,7 +116,7 @@ namespace BinaryRelations
             for (int i = 0; i < n; i++)
                 for (int j = 0; j < n; j++)
                     if (squareMatrix[i, j] > 0)
-                        if (matrix[i, j] <=0)
+                        if (matrix[i, j] <= 0)
                             return false;
             return true;
         }
@@ -164,7 +164,7 @@ namespace BinaryRelations
         {
             int sum;
             int n = matrix1.GetLength(0);
-            int[,] result = new int[n,n];
+            int[,] result = new int[n, n];
             for (int i = 0; i < n; i++)
                 for (int j = 0; j < n; j++)
                 {

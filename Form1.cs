@@ -168,9 +168,9 @@ namespace BinaryRelations
             SortedSet<int> oblZ = new SortedSet<int>(obl_Z);
             SortedSet<int> oblBr = new SortedSet<int>(obl_V.Union(obl_Z));
             oblTxt.Text = "";
-            Set(oblV, oblTxt, "Область визначення: D(R) = { ");
-            Set(oblZ, oblTxt, "Область значень: E(R) = { ");
-            Set(oblBr, oblTxt, "Область бінарного відношення: O(R) = { ");
+            Set(oblV, oblTxt, "Область определения: D(R) = { ");
+            Set(oblZ, oblTxt, "Область значений: E(R) = { ");
+            Set(oblBr, oblTxt, "Область бинарного отношения: O(R) = { ");
             int rows = oblBr.Count;
             int[,] matrix = new int[rows, rows];
             object[] firstRow = new object[rows + 1];

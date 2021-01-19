@@ -60,6 +60,8 @@ namespace BinaryRelations
             this.vlastLbl = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelTextBoxes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.matrixDgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -123,7 +125,7 @@ namespace BinaryRelations
             this.analyzeBtn.Name = "analyzeBtn";
             this.analyzeBtn.Size = new System.Drawing.Size(124, 30);
             this.analyzeBtn.TabIndex = 21;
-            this.analyzeBtn.Text = "Аналіз";
+            this.analyzeBtn.Text = "Анализ";
             this.analyzeBtn.UseVisualStyleBackColor = false;
             this.analyzeBtn.Click += new System.EventHandler(this.analyzeBtn_Click);
             // 
@@ -135,9 +137,9 @@ namespace BinaryRelations
             this.inputLabel.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.inputLabel.Location = new System.Drawing.Point(0, 0);
             this.inputLabel.Name = "inputLabel";
-            this.inputLabel.Size = new System.Drawing.Size(327, 27);
+            this.inputLabel.Size = new System.Drawing.Size(346, 27);
             this.inputLabel.TabIndex = 20;
-            this.inputLabel.Text = "Введіть бінарне відношення R:";
+            this.inputLabel.Text = "Введите бинарное отношение R:";
             // 
             // matrixDgv
             // 
@@ -195,9 +197,9 @@ namespace BinaryRelations
             this.ArefLbl.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ArefLbl.Location = new System.Drawing.Point(25, 122);
             this.ArefLbl.Name = "ArefLbl";
-            this.ArefLbl.Size = new System.Drawing.Size(207, 25);
+            this.ArefLbl.Size = new System.Drawing.Size(213, 25);
             this.ArefLbl.TabIndex = 32;
-            this.ArefLbl.Text = "Антирефлексивність";
+            this.ArefLbl.Text = "Антирефлексивность";
             // 
             // SymLbl
             // 
@@ -205,9 +207,9 @@ namespace BinaryRelations
             this.SymLbl.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SymLbl.Location = new System.Drawing.Point(25, 165);
             this.SymLbl.Name = "SymLbl";
-            this.SymLbl.Size = new System.Drawing.Size(155, 25);
+            this.SymLbl.Size = new System.Drawing.Size(175, 25);
             this.SymLbl.TabIndex = 33;
-            this.SymLbl.Text = "Симетричність";
+            this.SymLbl.Text = "Симметричность";
             // 
             // pictureBox2
             // 
@@ -233,9 +235,9 @@ namespace BinaryRelations
             this.AsymLbl.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AsymLbl.Location = new System.Drawing.Point(26, 250);
             this.AsymLbl.Name = "AsymLbl";
-            this.AsymLbl.Size = new System.Drawing.Size(165, 25);
+            this.AsymLbl.Size = new System.Drawing.Size(171, 25);
             this.AsymLbl.TabIndex = 35;
-            this.AsymLbl.Text = "Асиметричність";
+            this.AsymLbl.Text = "Асиметричность";
             // 
             // RefLbl
             // 
@@ -243,9 +245,9 @@ namespace BinaryRelations
             this.RefLbl.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RefLbl.Location = new System.Drawing.Point(25, 76);
             this.RefLbl.Name = "RefLbl";
-            this.RefLbl.Size = new System.Drawing.Size(158, 25);
+            this.RefLbl.Size = new System.Drawing.Size(164, 25);
             this.RefLbl.TabIndex = 31;
-            this.RefLbl.Text = "Рефлексивність";
+            this.RefLbl.Text = "Рефлексивность";
             this.RefLbl.MouseLeave += new System.EventHandler(this.RefLbl_MouseLeave);
             this.RefLbl.MouseHover += new System.EventHandler(this.RefLbl_MouseHover);
             // 
@@ -273,9 +275,9 @@ namespace BinaryRelations
             this.AntisLbl.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AntisLbl.Location = new System.Drawing.Point(25, 208);
             this.AntisLbl.Name = "AntisLbl";
-            this.AntisLbl.Size = new System.Drawing.Size(200, 25);
+            this.AntisLbl.Size = new System.Drawing.Size(220, 25);
             this.AntisLbl.TabIndex = 34;
-            this.AntisLbl.Text = "Антисиметричність";
+            this.AntisLbl.Text = "Антисимметричность";
             // 
             // pictureBox5
             // 
@@ -292,9 +294,9 @@ namespace BinaryRelations
             this.TrLbl.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TrLbl.Location = new System.Drawing.Point(26, 293);
             this.TrLbl.Name = "TrLbl";
-            this.TrLbl.Size = new System.Drawing.Size(159, 25);
+            this.TrLbl.Size = new System.Drawing.Size(165, 25);
             this.TrLbl.TabIndex = 36;
-            this.TrLbl.Text = "Транзитивність";
+            this.TrLbl.Text = "Транзитивность";
             // 
             // panelBv
             // 
@@ -313,6 +315,8 @@ namespace BinaryRelations
             this.panelDgv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDgv.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelDgv.Controls.Add(this.label2);
+            this.panelDgv.Controls.Add(this.label1);
             this.panelDgv.Controls.Add(this.matrixDgv);
             this.panelDgv.Controls.Add(this.squareDgv);
             this.panelDgv.Location = new System.Drawing.Point(3, 190);
@@ -390,9 +394,9 @@ namespace BinaryRelations
             this.vlastLbl.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.vlastLbl.Location = new System.Drawing.Point(76, 31);
             this.vlastLbl.Name = "vlastLbl";
-            this.vlastLbl.Size = new System.Drawing.Size(160, 25);
+            this.vlastLbl.Size = new System.Drawing.Size(135, 25);
             this.vlastLbl.TabIndex = 43;
-            this.vlastLbl.Text = "Властивості БВ";
+            this.vlastLbl.Text = "Свойства БО";
             // 
             // panelLeft
             // 
@@ -404,6 +408,27 @@ namespace BinaryRelations
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(742, 607);
             this.panelLeft.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(115, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 25);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "Матрица БО В:";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(429, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(258, 25);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "Матрица-квадрат К= В*В:";
             // 
             // Form1
             // 
@@ -429,6 +454,7 @@ namespace BinaryRelations
             this.panelBv.ResumeLayout(false);
             this.panelBv.PerformLayout();
             this.panelDgv.ResumeLayout(false);
+            this.panelDgv.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.squareDgv)).EndInit();
             this.panelVlast.ResumeLayout(false);
             this.panelVlast.PerformLayout();
@@ -464,6 +490,8 @@ namespace BinaryRelations
         private System.Windows.Forms.Label vlastLbl;
         public System.Windows.Forms.DataGridView squareDgv;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
